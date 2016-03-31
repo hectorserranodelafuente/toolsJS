@@ -1,8 +1,8 @@
 // Testing functions
 var expectConsole = ( fx, args, resultExpected, stringShowed ) => {
-					 expect(fx,args,resultExpected) ? console.log("%c"+stringShowed+" => TRUE"  ,'background-color:green;color:white') 
-												    : console.log("%c"+stringShowed+" => FALSE" ,'background-color:red;color:white')
-																  }
+	 expect(fx,args,resultExpected) ? console.log("%c"+stringShowed+" => TRUE"  ,'background-color:green;color:white') 
+				        : console.log("%c"+stringShowed+" => FALSE" ,'background-color:red;color:white')
+								  }
 var expect = ( fx, args, resultExpected) => ( fx.apply(this,args) === resultExpected ) ? true : false
 
 /* Example
